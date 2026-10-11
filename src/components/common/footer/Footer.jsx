@@ -12,7 +12,7 @@ const copyrightYear = new Date().getFullYear();
 
 const Footer = () => {
   return (
-    <div className="pt-25 md:pt-40 content max-2xl:px-3">
+    <div className="pt-25 md:pt-40 pb-16 content max-2xl:px-3">
       <div className="flex max-md:flex-col justify-between mx-0 items-center h-full w-full text-neutral-200">
         <a href="#" className="flex items-center border-0">
           <img src={logo} className="h-8 sm:h-14 rounded-2xl" alt="logo" />
@@ -33,19 +33,9 @@ const Footer = () => {
           ))}
         </div>
         <p className="text-[12px] sm:text-[16px]">
-          Copyright &copy; {copyrightYear} Picto.
+          Copyright &copy; {copyrightYear} Hieu Bui Trung. All rights reserved.
         </p>
       </div>
-      <p className="text-white text-center max-xs:text-[12px] max-md:text-[14px] w-full py-10">
-        Developed with ❤️ by{" "}
-        <a
-          href="https://www.themewagon.com"
-          className="underline font-bold"
-          target="_blank"
-        >
-          ThemeWagon
-        </a>
-      </p>
     </div>
   );
 };
